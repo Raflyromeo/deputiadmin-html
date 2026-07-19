@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visi dan Misi - Deputi Administrasi DPR RI</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { deep: '#002147', dark: '#071A33' },
+            gold: '#E9C349', bg: '#F8F9FA', txt: '#191C1D'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            caps: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-txt pt-[80px]">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Bagian Kepala Halaman -->
+    <div class="bg-navy-deep text-white py-16 relative overflow-hidden">
+      <div class="absolute inset-0 batik-pattern opacity-10"></div>
+      <div class="max-w-[1200px] mx-auto px-6 relative z-10 text-center">
+        <!-- Penunjuk Lokasi -->
+        <nav class="flex justify-center mb-6 text-sm font-caps text-white/70">
+          <ol class="inline-flex items-center space-x-2">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">home</span> Beranda</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li><a href="profil.html" class="hover:text-gold transition-colors">Profil</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li class="text-gold font-semibold tracking-wide">Visi dan Misi</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Visi dan Misi</h1>
+        <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Halaman Visi Misi -->
+    <section class="py-20 px-6 max-w-[1000px] mx-auto space-y-12">
+      
+      <!-- Bagian Visi -->
+      <div class="bg-white p-10 rounded-2xl shadow-xl border-t-4 border-gold text-center relative overflow-hidden group">
+        <div class="absolute right-0 bottom-0 opacity-5 transition-transform duration-700 group-hover:scale-125">
+          <span class="material-symbols-outlined text-[200px]">visibility</span>
+        </div>
+        <h2 class="font-heading text-3xl font-bold text-navy-deep mb-6 relative z-10">Visi</h2>
+        <p class="text-2xl font-sans text-navy-deep/80 leading-relaxed italic relative z-10 max-w-3xl mx-auto">
+          "Menjadi Sekretariat Jenderal yang Profesional dan Modern dalam mendukung Visi Dewan Perwakilan Rakyat Republik Indonesia."
+        </p>
+      </div>
+
+      <!-- Bagian Misi -->
+      <div class="bg-navy-deep p-10 rounded-2xl shadow-xl text-white relative overflow-hidden">
+        <div class="absolute inset-0 batik-pattern opacity-10"></div>
+        <div class="relative z-10">
+          <h2 class="font-heading text-3xl font-bold text-gold mb-8 text-center">Misi</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex gap-4 items-start bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors">
+               <span class="material-symbols-outlined text-gold text-4xl">gavel</span>
+               <div>
+                  <h3 class="font-heading font-bold text-xl mb-2">Tata Kelola Profesional dan Bersih</h3>
+                  <p class="text-white/80 leading-relaxed">Mewujudkan administrasi perkantoran, SDM, keuangan, dan aset yang tertib, bersih dari korupsi, serta akuntabel.</p>
+               </div>
+            </div>
+            <div class="flex gap-4 items-start bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors">
+               <span class="material-symbols-outlined text-gold text-4xl">analytics</span>
+               <div>
+                  <h3 class="font-heading font-bold text-xl mb-2">Penyediaan Data Akurat</h3>
+                  <p class="text-white/80 leading-relaxed">Mendukung pengambilan keputusan Dewan Perwakilan Rakyat Republik Indonesia dengan data kelembagaan yang valid, terukur, dan terintegrasi.</p>
+               </div>
+            </div>
+             <div class="flex gap-4 items-start bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors">
+               <span class="material-symbols-outlined text-gold text-4xl">devices</span>
+               <div>
+                  <h3 class="font-heading font-bold text-xl mb-2">Transformasi Digital</h3>
+                  <p class="text-white/80 leading-relaxed">Mengembangkan sistem informasi dan teknologi modern untuk mempermudah layanan internal maupun publik.</p>
+               </div>
+            </div>
+             <div class="flex gap-4 items-start bg-white/10 p-6 rounded-xl hover:bg-white/20 transition-colors">
+               <span class="material-symbols-outlined text-gold text-4xl">engineering</span>
+               <div>
+                  <h3 class="font-heading font-bold text-xl mb-2">Peningkatan Kompetensi Aparatur</h3>
+                  <p class="text-white/80 leading-relaxed">Membangun sumber daya manusia Setjen DPR RI yang unggul, berintegritas, dan mampu menghadapi tantangan global.</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
