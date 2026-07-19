@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri - Deputi Administrasi DPR RI</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { deep: '#002147', dark: '#071A33' },
+            gold: '#E9C349', bg: '#F8F9FA', txt: '#191C1D'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            caps: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-txt pt-[80px]">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Bagian Kepala Halaman -->
+    <div class="bg-navy-deep text-white py-16 relative overflow-hidden">
+      <div class="absolute inset-0 batik-pattern opacity-10"></div>
+      <div class="max-w-[1200px] mx-auto px-6 relative z-10 text-center">
+        <!-- Penunjuk Lokasi -->
+        <nav class="flex justify-center mb-6 text-sm font-caps text-white/70">
+          <ol class="inline-flex items-center space-x-2">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">home</span> Beranda</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li class="text-gold font-semibold tracking-wide">Galeri</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Galeri Kegiatan</h1>
+        <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Halaman Galeri -->
+    <section class="py-20 px-6 max-w-[1200px] mx-auto flex flex-col items-center">
+      
+      <!-- Tab Penyaring -->
+      <div class="inline-flex bg-white rounded-full shadow-md border border-gray-200 p-1 mb-12">
+        <button class="filter-btn active bg-navy-deep text-white px-8 py-2.5 rounded-full font-caps text-sm font-bold transition-all duration-300" data-filter="all">Semua</button>
+        <button class="filter-btn text-navy-deep px-8 py-2.5 rounded-full font-caps text-sm font-bold hover:bg-gold/20 transition-all duration-300" data-filter="photo">Foto</button>
+        <button class="filter-btn text-navy-deep px-8 py-2.5 rounded-full font-caps text-sm font-bold hover:bg-gold/20 transition-all duration-300" data-filter="video">Video</button>
+      </div>
+
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full" id="gallery-grid">
+        
+        <!-- Item 1 (Image) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="photo">
+          <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-gold text-navy-deep text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Foto</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Rapat Paripurna Ke-12</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 (Video) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="video">
+          <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-navy-deep/40 group-hover:bg-navy-deep/60 transition-colors duration-300 flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-6xl opacity-90 group-hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Video</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Dokumentasi Sidang</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 (Image) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="photo">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-gold text-navy-deep text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Foto</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Diskusi Panel Pimpinan</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- Item 4 (Image) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="photo">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-gold text-navy-deep text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Foto</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Pelatihan SDM</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- Item 5 (Video) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="video">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-navy-deep/40 group-hover:bg-navy-deep/60 transition-colors duration-300 flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-6xl opacity-90 group-hover:scale-110 transition-transform drop-shadow-lg">play_circle</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 pointer-events-none">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-red-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Video</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Kunjungan Kerja</p>
+            </div>
+          </div>
+        </div>
+        
+         <!-- Item 6 (Image) -->
+        <div class="gallery-item relative group overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 bg-gray-100 aspect-[4/3]" data-category="photo">
+          <img src="https://images.unsplash.com/photo-1575517111478-7f6afd0973db?auto=format&fit=crop&q=80&w=400" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Kegiatan">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+            <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <span class="inline-block bg-gold text-navy-deep text-[10px] font-bold px-2 py-1 rounded uppercase mb-2">Foto</span>
+              <p class="font-heading font-bold text-white text-lg leading-tight">Penandatanganan Mou</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-16 w-full">
+         <button class="border-2 border-navy-deep text-navy-deep px-10 py-3 rounded-full font-caps font-bold hover:bg-navy-deep hover:text-white transition-all shadow-sm">Muat Lebih Banyak</button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
