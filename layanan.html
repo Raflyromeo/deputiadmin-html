@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - Deputi Administrasi DPR RI</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { deep: '#002147', dark: '#071A33' },
+            gold: '#E9C349', bg: '#F8F9FA', txt: '#191C1D'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            caps: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-txt pt-[80px]">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Bagian Kepala Halaman -->
+    <div class="bg-navy-deep text-white py-16 relative overflow-hidden">
+      <div class="absolute inset-0 batik-pattern opacity-10"></div>
+      <div class="max-w-[1200px] mx-auto px-6 relative z-10 text-center">
+        <!-- Penunjuk Lokasi -->
+        <nav class="flex justify-center mb-6 text-sm font-caps text-white/70">
+          <ol class="inline-flex items-center space-x-2">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">home</span> Beranda</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li class="text-gold font-semibold tracking-wide">Layanan</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Layanan</h1>
+        <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Halaman Layanan -->
+    <section class="py-20 px-6 max-w-[1200px] mx-auto">
+       <p class="text-center text-lg text-txt/80 max-w-3xl mx-auto mb-16">
+        Komitmen kami untuk memberikan layanan yang responsif, transparan, dan terintegrasi baik untuk keperluan internal maupun masyarakat luas.
+      </p>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <!-- Bagian Internal -->
+        <div id="internal" class="bg-white border-t-4 border-navy-deep p-8 rounded-b-2xl shadow-sm">
+          <div class="flex items-center gap-4 mb-6">
+            <span class="material-symbols-outlined text-4xl text-navy-deep">badge</span>
+            <h2 class="font-heading text-2xl font-bold text-navy-deep">Layanan Internal</h2>
+          </div>
+          <p class="text-txt/70 mb-6">Portal layanan terpadu khusus bagi Pegawai Negeri Sipil di lingkungan Sekretariat Jenderal DPR RI.</p>
+          <ul class="space-y-3">
+             <li><a href="layanan-hris.html" class="block p-4 border rounded-lg hover:border-gold hover:shadow-md transition-all font-semibold text-navy-deep">Sistem Informasi Kepegawaian (HRIS)</a></li>
+             <li><a href="layanan-tnde.html" class="block p-4 border rounded-lg hover:border-gold hover:shadow-md transition-all font-semibold text-navy-deep">Tata Naskah Dinas Elektronik</a></li>
+             <li><a href="layanan-cuti.html" class="block p-4 border rounded-lg hover:border-gold hover:shadow-md transition-all font-semibold text-navy-deep">Pengajuan Cuti & Perjalanan Dinas</a></li>
+             <li><a href="layanan-gaji.html" class="block p-4 border rounded-lg hover:border-gold hover:shadow-md transition-all font-semibold text-navy-deep">Layanan Gaji dan Tunjangan</a></li>
+          </ul>
+        </div>
+
+        <!-- Eksternal dan Publikasi -->
+        <div class="space-y-12">
+          <div id="eksternal" class="bg-white border-t-4 border-gold p-8 rounded-b-2xl shadow-sm">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="material-symbols-outlined text-4xl text-gold">public</span>
+              <h2 class="font-heading text-2xl font-bold text-navy-deep">Layanan Eksternal</h2>
+            </div>
+            <p class="text-txt/70 mb-6">Akses layanan dan informasi yang disediakan secara terbuka untuk seluruh masyarakat Indonesia.</p>
+            <ul class="space-y-3">
+               <li><a href="layanan-dumas.html" class="block p-4 bg-bg rounded-lg hover:bg-gold/10 transition-all font-semibold text-navy-deep">Kanal Pengaduan Masyarakat (Dumas)</a></li>
+               <li><a href="layanan-ppid.html" class="block p-4 bg-bg rounded-lg hover:bg-gold/10 transition-all font-semibold text-navy-deep">Permohonan Informasi (PPID)</a></li>
+               <li><a href="layanan-helpdesk.html" class="block p-4 bg-bg rounded-lg hover:bg-gold/10 transition-all font-semibold text-navy-deep">Helpdesk Parlemen</a></li>
+            </ul>
+          </div>
+
+          <div id="publikasi" class="bg-navy-deep text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+            <div class="absolute inset-0 batik-pattern opacity-10"></div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+               <div>
+                  <h2 class="font-heading text-2xl font-bold text-gold mb-2">Publikasi & JDIH</h2>
+                  <p class="text-white/80 text-sm">Akses berbagai dokumen hukum, peraturan perundang-undangan, dan jurnal publikasi resmi lembaga.</p>
+               </div>
+               <a href="#" class="bg-gold text-navy-deep px-6 py-2 rounded font-bold hover:bg-white transition-colors flex-shrink-0">Kunjungi Portal JDIH</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
