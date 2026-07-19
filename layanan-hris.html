@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layanan - Deputi Administrasi DPR RI</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { deep: '#002147', dark: '#071A33' },
+            gold: '#E9C349', bg: '#F8F9FA', txt: '#191C1D'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+            caps: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-bg text-txt pt-[80px]">
+
+  <div id="navbar-container"></div>
+
+  <main>
+    <!-- Bagian Kepala Halaman -->
+    <div class="bg-navy-deep text-white py-16 relative overflow-hidden">
+      <div class="absolute inset-0 batik-pattern opacity-10"></div>
+      <div class="max-w-[1200px] mx-auto px-6 relative z-10 text-center">
+        <!-- Penunjuk Lokasi -->
+        <!-- Penunjuk Lokasi -->
+        <nav class="flex justify-center mb-6 text-sm font-caps text-white/70">
+          <ol class="inline-flex items-center space-x-2">
+            <li><a href="index.html" class="hover:text-gold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">home</span> Beranda</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li><a href="layanan.html" class="hover:text-gold transition-colors">Layanan</a></li>
+            <li class="flex items-center"><span class="material-symbols-outlined text-[16px] mx-1">chevron_right</span></li>
+            <li class="text-gold font-semibold tracking-wide">Detail Layanan</li>
+          </ol>
+        </nav>
+        <h1 class="font-heading text-4xl md:text-5xl font-bold mb-4">Detail Layanan</h1>
+        <div class="w-16 h-1 bg-gold mx-auto rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- Halaman Rincian Layanan -->
+    <section class="py-20 px-6 max-w-[900px] mx-auto">
+      
+      <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-12">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-16 h-16 bg-navy-deep/5 rounded-full flex items-center justify-center">
+            <span class="material-symbols-outlined text-4xl text-navy-deep">article</span>
+          </div>
+          <div>
+            <h2 class="font-heading text-3xl font-bold text-navy-deep">Detail Layanan</h2>
+            <span class="inline-block mt-2 bg-gold/20 text-navy-deep text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">Internal / Eksternal</span>
+          </div>
+        </div>
+        
+        <div class="prose max-w-none text-gray-700 leading-relaxed space-y-6">
+          <p class="text-lg">Halaman ini adalah contoh struktur untuk detail dari masing-masing layanan yang dipilih. Di sini akan dijelaskan secara rinci mengenai deskripsi layanan, syarat, ketentuan, dan prosedur pelaksanaannya.</p>
+          
+          <h3 class="text-xl font-bold text-navy-deep mt-8 mb-4">Deskripsi Layanan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+          
+          <h3 class="text-xl font-bold text-navy-deep mt-8 mb-4">Persyaratan</h3>
+          <ul class="list-disc pl-5 space-y-2">
+            <li>Dokumen identitas resmi yang masih berlaku.</li>
+            <li>Surat permohonan yang ditandatangani oleh atasan langsung (untuk internal).</li>
+            <li>Formulir pengajuan yang telah diisi lengkap.</li>
+          </ul>
+          
+          <div class="mt-12 p-6 bg-gray-50 border-l-4 border-gold rounded-r-lg">
+             <h4 class="font-bold text-navy-deep mb-2">Butuh Bantuan Lebih Lanjut?</h4>
+             <p class="text-sm">Silakan hubungi Helpdesk Parlemen melalui telepon di (021) 5715xxx atau kirimkan email ke <a href="mailto:helpdesk@dpr.go.id" class="text-gold font-bold hover:underline">helpdesk@dpr.go.id</a></p>
+          </div>
+          
+          <div class="mt-8">
+             <a href="layanan.html" class="inline-flex items-center gap-2 text-navy-deep font-bold hover:text-gold transition-colors">
+               <span class="material-symbols-outlined text-lg">arrow_back</span> Kembali ke Daftar Layanan
+             </a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
