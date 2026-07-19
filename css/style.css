@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #191C1D;
+  background-color: #F8F9FA;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-caps {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Batik Pattern Global (Kawung + Mandala Combination) */
+.batik-pattern {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 1 !important; /* Override inline tailwind opacities for fine-tuned control */
+  mix-blend-mode: normal !important;
+  overflow: hidden;
+}
+
+.batik-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/images/pattern/kawung-pattern.jpeg');
+  background-size: 350px;
+  background-repeat: repeat;
+  opacity: 0.05;
+  mix-blend-mode: screen;
+}
+
+.batik-pattern::after {
+  content: '';
+  position: absolute;
+  right: -200px;
+  bottom: -300px;
+  width: 800px;
+  height: 800px;
+  background-image: url('../assets/images/pattern/mandala.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.08;
+  mix-blend-mode: screen;
+  animation: spin-slow 90s linear infinite;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Base tailwind configuration styles are handled via JS config in the HTML head */
